@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: #f1f2f6;
+}
+
+.faq-accordion{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item{
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.faq-item-header{
+    background-color: #3333;
+    padding: 10px;
+    border-top-right-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item-header:hover{
+    background-color: #6666;
+}
+
+.faq-item-body{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height ease-in-out 0.5s;
+}
+
+.faq-item-bodycontent{
+    padding: 10px;
+    color: #333;
+}
+
+.faq-item.active .faq-item-body{
+    max-height: 300px;
+
+}
